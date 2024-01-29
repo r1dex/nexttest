@@ -76,11 +76,10 @@ select {
 
 :root{
 
-  /*rgb(72,72,19)*/
-
   --color-gradient-dark: linear-gradient(53deg, rgba(116,114,40,1) 0%, rgba(72,72,19,1) 100%);
   --color-gradient: linear-gradient(53deg, rgba(116,114,40,1) 0%, rgba(72,72,19,0.6) 100%);
   --color-gradient-light: linear-gradient(53deg, rgba(116,114,40,1) 0%, rgba(72,72,19,0.3) 100%);
+  --color-dark: rgb(72,72,19);
   --color-primary: rgb(85,82,19);
   --color-accent: rgb(107,106,31);
   --color-accent-opacity: rgba(107,106,31, 0.6);
@@ -166,6 +165,9 @@ section h2{
   margin-top: 70px;
   margin-bottom: 30px;
   text-align: center;
+  font-size: 1.8rem;
+  color: var(--color-dark);
+  font-weight: 600;
 }
 
 /* hero block */
@@ -182,6 +184,7 @@ section.glass-hero{
   border-left: 3px solid var(--color-secondary);
   border-top: 3px solid var(--color-secondary);
   padding: 15px;
+  font-weight: 600;
 }
 
 .glass-hero__w-list{

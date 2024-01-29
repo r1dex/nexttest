@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Styles from './header.module.css'
 import { ImMobile } from "react-icons/im";
+import { SlSocialVkontakte } from "react-icons/sl";
 
 const Header = () => {
   return (
@@ -14,12 +15,15 @@ const Header = () => {
       <div>
         <button className="button-small">Каталог</button>
       </div>
-      <div>
-        Соцсети
+      <div className={Styles.social}>
+        <div className={Styles.socialIcon}>
+          <SlSocialVkontakte />
+        </div>
+        <span>Мы вконтакте</span>
       </div>
       <div>
         <span className={Styles.phone}>
-          <ImMobile />
+          <div className={Styles.phoneIcon}><ImMobile /></div>
           7(999)122-15-16
         </span>
       </div>

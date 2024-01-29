@@ -1,5 +1,3 @@
-'use client'
-
 import Image from "next/image";
 import React from 'react'
 import Link from 'next/link'
@@ -50,7 +48,7 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <h2>Тут бы заголовок</h2>
+        <h2>Наша продукция</h2>
 
         <div className="glass-main-products">
           <Link className="glass-main-products__card" href="/categories/1">
