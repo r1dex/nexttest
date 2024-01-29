@@ -1,0 +1,384 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  text-underline: none;
+  color: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* END RESET */
+
+
+
+/* COLORS */
+
+:root{
+  --color-primary: rgb(85,82,19);
+  --color-accent: rgb(107,106,31);
+  --color-accent-opacity: rgba(107,106,31, 0.6);
+  --color-light: rgba(107,106,31, 0.1);
+  --color-background: #f5f5f5;
+
+  /*rgb(107,106,31)*/
+/*rgb(85,82,19)*/
+}
+
+
+/* spaces */
+
+.mt-30{
+  margin-top: 30px;
+}
+
+/* UI */
+
+.button, .button-rounded, .button-small{
+  padding: 20px 40px;
+  background: var(--color-accent);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all;
+  border: none;
+  width: max-content;
+}
+
+.button-rounded{
+  border-radius: 50px;
+}
+
+.button-small{
+  padding: 5px 40px;
+}
+
+.button:hover, .button-rounded:hover, .button-small:hover{
+  cursor: pointer;
+  background: var(--color-primary);
+}
+
+/* STYLES */
+
+html{
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+header, main, footer{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+  background: var(--color-background);
+  padding: 20px;
+  height: 105px;
+  /*border-bottom: 2px solid var(--color-primary);*/
+}
+
+.logo{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: "Mate SC", serif;
+}
+
+.phone{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+main{
+  margin-top: 5px;
+  padding: 20px 20px;
+  background: var(--color-background);
+}
+
+section h2{
+  margin-top: 70px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* hero block */
+
+section.glass-hero{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 500px;
+  gap: 20px;
+}
+
+.glass-hero h1{
+  border-left: 3px solid var(--color-accent-opacity);
+  border-top: 3px solid var(--color-accent-opacity);
+  padding: 15px;
+}
+
+.glass-hero__w-list{
+  background: url("../public/images/1.jpg");
+  background-size: cover;
+  width: 70%;
+  position: relative;
+  padding: 50px;
+}
+
+.glass-hero__w-list:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.glass-hero__text{
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 1.3rem;
+  /*background: var(--color-accent-opacity);*/
+}
+
+.glass-hero__text h1{
+  margin-bottom: 20px;
+}
+
+.glass-hero__more{
+  padding-top: 80px;
+  font-size: 1.1rem;
+  display: flex;
+  gap: 40px;
+}
+
+.glass-hero__more > div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.glass-hero__more img{
+  width: 60px;
+  height: auto;
+}
+
+.glass-hero__request-list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.glass-hero__request{
+  background: url("../public/images/2.jpg");
+  background-size: cover;
+  flex: 1;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.glass-hero__request:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+.glass-hero__request-plus{
+  background: url("../public/images/3.jpg");
+  background-size: cover;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.glass-hero__request:hover span, .glass-hero__request-plus:hover span{
+  background: var(--color-primary);
+}
+
+.glass-hero__request span, .glass-hero__request-plus span{
+  background: var(--color-accent-opacity);
+  height: max-content;
+  max-width: 80%;
+  padding: 10px 15px;
+  display: block;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.1rem;
+  position: relative;
+  z-index: 1;
+  transition: 0.3s ease all;
+}
+
+/* END HERO */
+
+.glass-main-products{
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.glass-main-products__card{
+  width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background: var(--color-accent-opacity);
+  transition: 0.3s ease all;
+}
+
+.glass-main-products__card:hover{
+  background: var(--color-primary);
+}
+
+.glass-main-products__text {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass-main-products__text span{
+  display: block;
+  padding: 20px;
+  color: white;
+}
+
+.glass-main-products__image{
+  height: 350px;
+  position: relative;
+}
+
+.glass-main-products img{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+footer{
+  background: var(--color-background);
+  padding: 50px;
+  margin-top: 5px;
+}
+
+/* facet page */
+
+.facet-content{
+  display: flex;
+}
+
+.facet-content > div{
+  flex: 1;
+}
+
+.facet-content__description{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 40px;
+}
+
+.facet-content__description :nth-child(2){
+  flex-grow: 1;
+}
+
