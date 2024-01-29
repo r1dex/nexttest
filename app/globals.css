@@ -75,14 +75,18 @@ select {
 /* COLORS */
 
 :root{
+
+  /*rgb(72,72,19)*/
+
+  --color-gradient-dark: linear-gradient(53deg, rgba(116,114,40,1) 0%, rgba(72,72,19,1) 100%);
+  --color-gradient: linear-gradient(53deg, rgba(116,114,40,1) 0%, rgba(72,72,19,0.6) 100%);
+  --color-gradient-light: linear-gradient(53deg, rgba(116,114,40,1) 0%, rgba(72,72,19,0.3) 100%);
   --color-primary: rgb(85,82,19);
   --color-accent: rgb(107,106,31);
   --color-accent-opacity: rgba(107,106,31, 0.6);
   --color-light: rgba(107,106,31, 0.1);
   --color-background: #f5f5f5;
-
-  /*rgb(107,106,31)*/
-/*rgb(85,82,19)*/
+  --color-secondary: #BAB877;
 }
 
 
@@ -96,7 +100,7 @@ select {
 
 .button, .button-rounded, .button-small{
   padding: 20px 40px;
-  background: var(--color-accent);
+  background: var(--color-gradient-dark);
   color: white;
   display: flex;
   justify-content: center;
@@ -116,7 +120,7 @@ select {
 
 .button:hover, .button-rounded:hover, .button-small:hover{
   cursor: pointer;
-  background: var(--color-primary);
+  opacity: 0.9;
 }
 
 /* STYLES */
@@ -152,11 +156,6 @@ header{
   font-family: "Mate SC", serif;
 }
 
-.phone{
-  font-size: 2rem;
-  font-weight: 500;
-}
-
 main{
   margin-top: 5px;
   padding: 20px 20px;
@@ -180,8 +179,8 @@ section.glass-hero{
 }
 
 .glass-hero h1{
-  border-left: 3px solid var(--color-accent-opacity);
-  border-top: 3px solid var(--color-accent-opacity);
+  border-left: 3px solid var(--color-secondary);
+  border-top: 3px solid var(--color-secondary);
   padding: 15px;
 }
 
@@ -306,12 +305,12 @@ section.glass-hero{
   display: flex;
   flex-direction: column;
   border-radius: 15px;
-  background: var(--color-accent-opacity);
+  background: var(--color-gradient);
   transition: 0.3s ease all;
 }
 
 .glass-main-products__card:hover{
-  background: var(--color-primary);
+  opacity: 0.8;
 }
 
 .glass-main-products__text {

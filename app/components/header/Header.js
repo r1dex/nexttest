@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-
+import Styles from './header.module.css'
+import { ImMobile } from "react-icons/im";
 
 const Header = () => {
   return (
@@ -17,9 +18,12 @@ const Header = () => {
         Соцсети
       </div>
       <div>
-        <span className="phone">3(567)123-45-67</span>
+        <span className={Styles.phone}>
+          <ImMobile />
+          7(999)122-15-16
+        </span>
       </div>
-      <div>
+      <div className={Styles.call}>
         Заказать звонок
       </div>
     </header>

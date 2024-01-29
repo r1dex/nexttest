@@ -1,0 +1,18 @@
+
+.call{
+    cursor: pointer;
+    transition: 0.3s ease all;
+    border-bottom: 4px solid var(--color-accent);
+}
+
+.call:hover{
+    border-bottom: 4px solid var(--color-secondary);
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
