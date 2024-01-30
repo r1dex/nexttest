@@ -14,7 +14,7 @@ const Footer = () => {
         </li>
         <li>
           <div className={Styles.contactIcon}><LuMapPin /></div>
-          Ул. Пушкина д. 21
+          г. Санкт-Петербург <br /> Ул. Бассейная 55
         </li>
         <li>
           <div className={Styles.contactIcon}><IoTimeOutline /></div>
@@ -28,7 +28,7 @@ const Footer = () => {
       <div className={Styles.map}>
         <iframe
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A21ce4bbf2c5ae414b74bbcf039dbb0f13efa467f68aca9dc7fa5984db8267c35&amp;source=constructor"
-          width="800" height="400" frameBorder="0" />
+          width="755" height="372" frameBorder="0"></iframe>
       </div>
     </footer>
   )

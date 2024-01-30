@@ -56,7 +56,6 @@ a:not([class]) {
 
 img,
 picture {
-  max-width: 100%;
   display: block;
 }
 
@@ -183,8 +182,10 @@ section.glass-hero{
 .glass-hero h1{
   border-left: 3px solid var(--color-secondary);
   border-top: 3px solid var(--color-secondary);
-  padding: 15px;
+  margin: 50px 50px 20px 50px;
   font-weight: 600;
+  font-size: 1.5rem;
+  padding: 20px;
 }
 
 .glass-hero__w-list{
@@ -192,7 +193,6 @@ section.glass-hero{
   background-size: cover;
   width: 70%;
   position: relative;
-  padding: 50px;
 }
 
 .glass-hero__w-list:after{
@@ -214,21 +214,26 @@ section.glass-hero{
   /*background: var(--color-accent-opacity);*/
 }
 
-.glass-hero__text h1{
-  margin-bottom: 20px;
+.glass-hero__text p{
+  margin-left: 50px;
 }
 
 .glass-hero__more{
   padding-top: 80px;
   font-size: 1.1rem;
   display: flex;
-  gap: 40px;
+  margin-top: 100px;
 }
 
 .glass-hero__more > div{
   display: flex;
   flex-direction: column;
   gap: 10px;
+  flex: 1;
+  overflow-wrap: anywhere;
+  font-size: 0.9rem;
+  align-items: center;
+  text-align: center;
 }
 
 .glass-hero__more img{
@@ -362,25 +367,3 @@ footer{
   padding: 50px;
   margin-top: 5px;
 }
-
-/* facet page */
-
-.facet-content{
-  display: flex;
-}
-
-.facet-content > div{
-  flex: 1;
-}
-
-.facet-content__description{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-right: 40px;
-}
-
-.facet-content__description :nth-child(2){
-  flex-grow: 1;
-}
-

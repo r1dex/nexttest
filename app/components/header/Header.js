@@ -8,23 +8,23 @@ import { SlSocialVkontakte } from "react-icons/sl";
 const Header = () => {
   return (
     <header>
-      <Link className="logo" href="/">
-        <Image src='/images/logo.png' width={300} height={100} alt={'Artenglass'} priority/>
+      <Link href="/">
+        <Image src='/images/logo.png' width={300} height={65} alt={'Artenglass'} priority/>
         {/*<img src="./images" height="50">*/}
       </Link>
       <div>
         <button className="button-small">Каталог</button>
       </div>
-      <div className={Styles.social}>
+      <Link className={Styles.social} href={'https://vk.com/club224470095'} target="_blank">
         <div className={Styles.socialIcon}>
           <SlSocialVkontakte />
         </div>
         <span>Мы вконтакте</span>
-      </div>
+      </Link>
       <div>
         <span className={Styles.phone}>
           <div className={Styles.phoneIcon}><ImMobile /></div>
-          7(999)122-15-16
+           +7(995)891-58-15
         </span>
       </div>
       <div className={Styles.call}>

@@ -1,0 +1,29 @@
+.title{
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.content{
+    display: flex;
+}
+
+.content > div{
+    flex: 1;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 40px;
+}
+
+
+
+.description p{
+    margin-bottom: 20px;
+}
+
+.description span{
+     flex-grow: 1;
+ }
