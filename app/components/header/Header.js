@@ -24,7 +24,7 @@ const Header = () => {
       <div>
         <span className={Styles.phone}>
           <div className={Styles.phoneIcon}><ImMobile /></div>
-           +7(995)891-58-15
+           +7 (995) 891-58-15
         </span>
       </div>
       <div className={Styles.call}>

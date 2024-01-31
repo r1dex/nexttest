@@ -1,10 +1,9 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import React from 'react'
-
-const inter = Inter({ subsets: ["latin"] });
+import {mainFont, titleFont} from './fonts'
+import ModalCB from './components/modal/Modal'
 
 export const metadata = {
   title: "Create Next App",
@@ -14,10 +13,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ru">
-      <body>
+      <body className={`${mainFont.variable} ${titleFont.variable}`}>
       <Header />
       {children}
       <Footer />
+      {/*<ModalCB />*/}
       </body>
     </html>
   );

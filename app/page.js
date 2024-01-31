@@ -1,52 +1,14 @@
 import Image from "next/image";
 import React from 'react'
 import Link from 'next/link'
+import Hero from './components/hero/Hero'
 
 export default function Home() {
   return (
     <main>
-      <section className="glass-hero">
-        <div className="glass-hero__w-list">
-          <div className="glass-hero__text">
-            <h1>Зеркало на заказ от производителя</h1>
-            {/*<p>Шлифовка, полировка, фацет, алмазная графировка, закалка, пескоструйная обработка, стеклянный фартук, полки</p>*/}
-            <div className="glass-hero__more">
-              <div>
-                <Image src="/images/icons/cert.svg" width={60} height={60} alt={'Квалифицированные мастера'}/>
-                  <div>Квалифицированные мастера</div>
-              </div>
-              <div>
-                <Image src="/images/icons/insignia.svg" width={60} height={60}  alt={'Гарантия от 1 года'}/>
-                  <div>Гарантия от 1 года</div>
-              </div>
-              <div>
-                <Image src="/images/icons/shield.svg" width={60} height={60} alt={'Только качественный материал'}/>
-                  <div>Только качественный материал</div>
-              </div>
-              <div>
-                <Image src="/images/icons/calendar.svg" width={60} height={60} alt={'Изготовим точно в срок'}/>
-                  <div>Изготовим точно в срок</div>
-              </div>
-              <div>
-                <Image src="/images/icons/shipp.svg" width={60} height={60} alt={'Доставка точно в срок'}/>
-                  <div>Доставка точно в срок</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="glass-hero__request-list">
-          <Link className="glass-hero__request" href="/categories/1">
-            <span>
-              Зеркало и стекло на заказ
-            </span>
-          </Link>
-          <Link className="glass-hero__request-plus" href="/categories/1">
-            <span>
-              Зеркало на заказ по индивидуальный размерам
-            </span>
-          </Link>
-        </div>
-      </section>
+
+      <Hero />
+
       <section>
         <h2>Наша продукция</h2>
 
