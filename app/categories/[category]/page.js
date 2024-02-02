@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Styles from './categoryPage.module.css'
 import {notFound} from 'next/navigation'
+import CalculateButton from './CalculateButton'
 
 const categories = [
   {name: 'facet-i-almaznaya-gravirovka', image: '/images/categories/facet.jpg', title: 'Фацет и алмазная гравировка', content: '<p>Фацет - декоративный скос зеркале. Его наносят по всему периметру краев, под разным углом и разной ширины.Фацет придает изделию выразительность и блеск. Зеркальное панно с фацетом сделает любой интерьер изысканными неповторимым.</p> <p>Алмазная гравировка – нанесение на зеркало рисунка, надписи или геометрического орнамента методом фрезеровки. Алмазная гравировка придаёт изделию неповторимый блеск, каждая зеркальная грань будет отражать свет под своим углом, стекло и зеркала с гравировкой используют для декорирования дверей, шкафов-купе идругих предметов мебели.</p>'},
@@ -27,7 +28,7 @@ const Page = ({params}) => {
           <h1 className={Styles.title}>{category.title}</h1>
           <div className={Styles.description}>
             <span dangerouslySetInnerHTML={description}/>
-            <button className="button-rounded">Рассчитать стоимость</button>
+            <CalculateButton/>
           </div>
         </div>
         <div>
