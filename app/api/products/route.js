@@ -3,6 +3,9 @@ import { connectToDb } from "@/db/connect";
 import { NextResponse } from "next/server";
 
 export const GET = async (request) => {
+
+    return 1
+
     try {
         connectToDb();
         const posts = await Products.find();

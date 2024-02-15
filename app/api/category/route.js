@@ -6,6 +6,9 @@ import { writeFile } from "fs/promises"
 import {revalidatePath} from "next/cache";
 
 export const GET = async (request) => {
+
+    return 1
+
     try {
         connectToDb();
         const posts = await Category.find();
@@ -17,6 +20,8 @@ export const GET = async (request) => {
 }
 
 export const POST = async (req, params) => {
+
+    return 1
 
     const data = await req.formData()
 
