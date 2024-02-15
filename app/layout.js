@@ -4,6 +4,8 @@ import Footer from './components/footer/Footer'
 import React from 'react'
 import {mainFont, titleFont} from './fonts'
 import ModalCB from './components/modal/Modal'
+import {ToastContainer} from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css'
 
 export const metadata = {
   title: "Create Next App",
@@ -18,6 +20,7 @@ export default function RootLayout({ children }) {
       {children}
       <Footer />
       {/*<ModalCB />*/}
+      <ToastContainer />
       </body>
     </html>
   );

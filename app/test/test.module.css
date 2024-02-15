@@ -1,0 +1,16 @@
+
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.listItem:first-child{
+    border-top: 1px solid grey;
+    margin-top: 50px;
+}
+
+.listItem{
+    border-bottom: 1px solid grey;
+    padding: 20px 0;
+}

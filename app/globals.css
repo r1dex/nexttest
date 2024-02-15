@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.Toastify{
-  z-index: 99999;
+.Toastify__toast-container{
+  z-index: 99999 !important;
 }
 
 *,

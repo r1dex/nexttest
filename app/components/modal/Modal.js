@@ -3,8 +3,7 @@
 import React, {useState} from 'react'
 import Styles from './modal.module.css'
 import { VscChromeClose } from "react-icons/vsc"
-import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
+import { toast } from 'react-toastify'
 
 const ModalCB = ({isVisible, onCloseCallback}) => {
 
@@ -41,7 +40,6 @@ const ModalCB = ({isVisible, onCloseCallback}) => {
           </form>
         </div>
       </div>
-      <ToastContainer />
     </>
   )
 }
