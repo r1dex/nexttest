@@ -7,7 +7,7 @@ import {revalidatePath} from "next/cache";
 
 export const GET = async (request) => {
 
-    return 1
+    return NextResponse.json(1);
 
     try {
         connectToDb();
@@ -21,7 +21,7 @@ export const GET = async (request) => {
 
 export const POST = async (req, params) => {
 
-    return 1
+    return NextResponse.json(1);
 
     const data = await req.formData()
 

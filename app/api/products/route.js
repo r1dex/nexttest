@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 
 export const GET = async (request) => {
 
-    return 1
+    return NextResponse.json(1);
 
     try {
         connectToDb();
