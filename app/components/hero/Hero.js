@@ -29,19 +29,19 @@ const Hero = () => {
             </div>
             <div>
               <Image src="/images/icons/shipp.svg" width={60} height={60} alt={'Доставка точно в срок'}/>
-              <div>Доставка точно в срок</div>
+              <div>Доставка точно в срок</div>
             </div>
           </div>
         </div>
       </div>
 
       <div className={Styles.glassList}>
-        <Link className={Styles.glassRequest} href="/categories/1">
+        <Link className={Styles.glassRequest} href="/categories/zerkalo-bez-podsvetki">
             <span>
               Зеркало и стекло на заказ
             </span>
         </Link>
-        <Link className={Styles.glassIndividually} href="/categories/1">
+        <Link className={Styles.glassIndividually} href="/categories/zerkalo-s-podsvetkoj-na-zakaz">
             <span>
               Зеркало на заказ по индивидуальный размерам
             </span>

@@ -75,7 +75,8 @@ select {
 :root{
   --color-gradient: linear-gradient(53deg, rgb(211,188,103) 0%, rgb(211,188,103) 100%);
   --color-gradient-light: linear-gradient(53deg, rgba(116,114,40,1) 0%, rgba(72,72,19,0.3) 100%);
-  --color-primary: #71704e;
+  /*--color-primary: #71704e;*/
+  --color-primary: #71684b;
   --color-accent: rgb(211,188,103);
   --color-accent-opacity: rgba(211,188,103, 0.7);
   --color-light: rgba(107,106,31, 0.1);
