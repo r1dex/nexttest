@@ -1,0 +1,49 @@
+.guarantees{
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    gap: 10px;
+    padding: 5px;
+}
+
+.guarantees span{
+    background: var(--color-accent-opacity);
+    height: max-content;
+    max-width: 80%;
+    padding: 10px 15px;
+    display: block;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.1rem;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s ease all;
+}
+
+.guarantee{
+    flex: 1;
+}
+
+.guarantee > img{
+    width: 100%;
+    height: 150px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    object-fit: cover;
+}
+
+.guarantee > div{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px 10px;
+    background: var(--color-accent);
+    color: white;
+}
