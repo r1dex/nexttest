@@ -1,7 +1,7 @@
 import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
 import Styles from './hero.module.css'
+import HeroAdvantages from "@/app/components/hero/HeroAdvantages";
+import HeroTitle from "@/app/components/hero/HeroTitle";
 
 const Hero = () => {
   return (
@@ -9,29 +9,8 @@ const Hero = () => {
 
       <div className={Styles.list}>
         <div className={Styles.textBlock}>
-          <h1>Зеркало на заказ от производителя</h1>
-          <div className={Styles.advantages}>
-            <div>
-              <Image src="/images/icons/cert.svg" width={60} height={60} alt={'Квалифицированные мастера'}/>
-              <div>Квалифицированные мастера</div>
-            </div>
-            <div>
-              <Image src="/images/icons/insignia.svg" width={60} height={60}  alt={'Гарантия от 1 года'}/>
-              <div>Гарантия от 1 года</div>
-            </div>
-            <div>
-              <Image src="/images/icons/shield.svg" width={60} height={60} alt={'Только качественный материал'}/>
-              <div>Только качественный материал</div>
-            </div>
-            <div>
-              <Image src="/images/icons/calendar.svg" width={60} height={60} alt={'Изготовим точно в срок'}/>
-              <div>Быстро изготовим</div>
-            </div>
-            <div>
-              <Image src="/images/icons/shipp.svg" width={60} height={60} alt={'Доставка точно в срок'}/>
-              <div>Доставка точно в срок</div>
-            </div>
-          </div>
+          <HeroTitle />
+          <HeroAdvantages />
         </div>
       </div>
     </section>
