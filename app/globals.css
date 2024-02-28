@@ -181,3 +181,14 @@ footer{
   padding: 50px;
   margin-top: 5px;
 }
+
+/* slider */
+.slick-prev{
+  left: 10px !important;
+  z-index: 1;
+}
+
+.slick-next{
+  right: 10px !important;
+  z-index: 1;
+}

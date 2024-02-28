@@ -5,7 +5,7 @@ import Styles from './header.module.css'
 import { ImMobile } from "react-icons/im";
 import { SlSocialVkontakte } from "react-icons/sl";
 import CallbackButton from './CallbackButton'
-import CatalogNav from '../ui/CatalogNav'
+import CatalogNav from '../ui/catalog-navigation/CatalogNav'
 
 const Header = () => {
   return (

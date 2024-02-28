@@ -5,6 +5,7 @@
 
 .content{
     display: flex;
+    padding-bottom: 50px;
 }
 
 .content > div{
@@ -17,8 +18,6 @@
     gap: 10px;
     padding-right: 40px;
 }
-
-
 
 .description p{
     margin-bottom: 20px;
