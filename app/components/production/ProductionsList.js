@@ -48,7 +48,7 @@ const ProductionsList = () => {
                     </div>
                 </Link>
 
-                <Link className={Styles.card} href="/categories/zakalka-stekl">
+                <Link className={Styles.card} href="/categories/zakalka-stekla">
                     <div className={Styles.image}>
                         <Image src="/images/main-catalog/5.jpg" width={300} height={350}
                                alt={'Закалка'}/>
