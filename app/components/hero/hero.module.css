@@ -91,3 +91,45 @@
 .advantage {
     opacity: 0;
 }
+
+@media (max-width: 768px) {
+    .hero h1{
+        font-weight: 600;
+        font-size: 1.5rem;
+        padding: 20px;
+        font-family: var(--title-font);
+        text-align: center;
+        position: relative;
+        width: max-content;
+        opacity: 0;
+    }
+
+    .advantages{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .advantages > div{
+        min-width: 150px;
+        gap: 20px;
+    }
+
+    .advantages img{
+        width: 45px;
+        height: auto;
+    }
+}
+@media (max-width: 500px) {
+    .hero h1{
+        font-size: 1.2rem;
+    }
+
+    .hero h1:before, .hero h1:after{
+        display: none;
+    }
+
+    .advantages > div{
+        min-width: 110px;
+        gap: 10px;
+    }
+}

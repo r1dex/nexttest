@@ -32,12 +32,12 @@ const Page = ({params}) => {
           </div>
         </div>
 
-        <div style={{maxWidth: "50%"}}>
+        <div className={Styles.slider}>
           {category.images.length > 1
               ? <CategorySlider images={category.images}/>
               : (
                   <div>
-                    <Image src={category.images[0]} alt={category.title} width={700} height={400} style={{height: '400px', objectFit: 'cover'}}/>
+                    <Image src={category.images[0]} alt={category.title} width={768} height={500} style={{height: '400px', objectFit: 'cover'}}/>
                   </div>
               )
           }
